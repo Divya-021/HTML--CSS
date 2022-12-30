@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Food Order</title>
+        <script>
+            function myFunction() {
+              document.getElementById("demo").innerHTML = "Paragraph changed.";
+            }
+            function validate()
+            {
+                var emailID = document.myForm.l3.value;
+                 if( emailID == "" ) 
+                 {
+                     alert( "Please provide your Email!" ); 
+                     document.myForm.l3.focus() ; 
+                     return false;
+                } 
+                atpos = emailID.indexOf("@"); 
+                dotpos = emailID.lastIndexOf("."); 
+                if (atpos < 1 || ( dotpos - atpos < 2 )) 
+                {
+                     alert("Please enter correct email ID") 
+                    document.myForm.l3.focus() ;
+                    return false;
+                }
+            }
+            </script>
+    </head>
+    <body>
+        <h2>Demo JavaScript in Head</h2>
+
+        <p id="demo">A Paragraph</p>
+        <form action="/Forms/reg.html" method="post" name="myForm" onsubmit="return(validate());">
+           
+        <h1>Order your food here </h1>
+        <p><u> Enter your details:</u></p>
+        <p><label> First Name:<input name="l1" required></label></p>
+        <p><label> Address:<textarea name="t1"></textarea></label></p>
+        <p><label>Telephone: <input type=tel name="l2"></label></p>
+        <p><label>E-mail address: <input type=email name="l3"></label></p>
+    <fieldset>
+    <label>Select Items:</label>
+    <input type="checkbox" name="item" checked="true">pizza
+    <input type="checkbox" name="item">burger
+    <input type="checkbox" name="item">bread
+    <input type="checkbox" name="item">coke
+    </fieldset>
+<fieldset>
+    <legend> Pizza Size </legend>
+    <p><label> <input type=radio name=size> Small </label></p>
+    <p><label> <input type=radio name=size> Medium </label></p>
+    <p><label> <input type=radio name=size> Large </label></p> 
+</fieldset>
+<p><label>Preferred delivery time: <input type=time min="11:00" max="21:00"></label></p>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+  }
+  .female {
+    color: blue;
+  }
+  .male {
+    color: red;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .italic {
+    font-style: italic;
+  }
+  #middlemarch {
+    list-style-type: lower-roman;
+    line-height: 40px;
+    margin-left: 30px;
+  }
+  #taletwocities {
+    list-style-type: lower-alpha;
+  }

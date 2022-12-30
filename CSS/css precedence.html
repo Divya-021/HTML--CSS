@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta  charset="utf-8">
+    <title>CSS precedence 1</title>
+    <style>
+     section h1{
+  color:grey; 
+  font-size:1.2rem;
+}
+  article h1{
+  color: black; 
+  font-size: 1.4rem;   
+}
+       h1{
+  color:blue; 
+  font-size: 2rem;
+}
+
+    </style>
+</head>
+​
+<body>
+  <h1>My Book</h1>
+  <article>
+    <h1>Chapter 1 </h1>
+    <section>
+      <h1>Section 1.1</h1>
+      <p>...</p>
+    </section>
+    <section>
+      <h1>Section 1.2</h1>
+    </section>  
+  </article> 
+</body>
+</html>

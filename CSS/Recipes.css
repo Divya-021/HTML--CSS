@@ -1,0 +1,40 @@
+.Flexy {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  article {
+    margin: 10px;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 50px;
+    max-width: 150px;
+    flex: 3 1 100vw;
+  }
+  
+  .navli1,
+  .navli2,
+  .navli3 {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: lightgray;
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 20px;
+    flex: 0 1 100vw;
+  }
+  header {
+    margin: 10px;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 50px;
+    flex: 1 1 100vw;
+    text-align: center;
+  }
+  body {
+    background-image: url("https://thumbs.dreamstime.com/b/greek-food-background-traditional-different-greek-dishes-set-greek-food-background-traditional-different-greek-dishes-set-top-view-178761927.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  

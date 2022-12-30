@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Form Control</title>
+    </head>
+    <body>
+        <form>
+            <h3 style="margin-left:100px">Form Registration</h3>
+            First Name:
+            <input type="text" required> <br>
+            <label> Last Name:</label>
+            <input type="text"> <br> 
+            <label for="l1"> checkbox
+                <input type="checkbox" id="l1">
+            </label><br>
+            <label> Subjects: </label>
+            <input type="checkbox" name="sub" checked>C programming<br>
+            <input type="checkbox" name="sub"> C++ programming<br>
+            <input type="checkbox" name="sub"> java programming<br>
+            <label> Gender: </label>
+            <input type="radio" name="r1"> Male <br>
+            <input type="radio" name="r1"> Female <br>
+            <label> country </label>
+            <select>
+                <option value="" selected disabled>--Choose Country--</option>
+                 <option value="india"> India </option>
+                <option value="australia"> Australia </option>
+                <option value="us"> US </option>
+                <option value="uae"> UAE </option>
+            </optgroup>
+            </select><br>
+            Address: 
+            <textarea> </textarea><br>
+            Upload File:
+            <input type="file">
+            <input type="submit" value="send">
+            <input type="reset">
+            <input type="button" value="ok">
+            <button> clear</button> <br>
+            <!-- <input type="image" src="/images/kitten.jpg"> -->
+        <fieldset>
+            <legend> User Details</legend>
+            Username: <input type="text">
+            Password: <input type="password">
+        </fieldset>
+        </form>
+    </body>
+</html>
