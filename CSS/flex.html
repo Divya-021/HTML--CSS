@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (min-device-width:768px){
+            .container, .container1{
+            display: flex;
+            /* flex-direction:column-reverse; */
+            /* align-items: flex-start; */
+
+        }
+        .container div,.container1 div{
+            border: 1px solid black;
+            padding: 10px;
+        }   
+        }
+        
+        .container1{
+            justify-content: space-between;
+        }
+        
+        .box1{
+            flex: 2;
+            order: 2;
+        }
+        .box2{
+            flex:1;
+            order: 1;
+        }
+        .box3{
+            flex:1;
+            order: 2;
+        }
+        .box4{
+            /* width: 20%; */
+            flex-basis: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box1">
+        Box1 <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto explicabo repellat deleniti natus magni animi, possimus, debitis saepe nisi quis ipsam eveniet vel officiis.
+    </div>
+    <div class="box2">
+        Box2 <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur libero obcaecati tempora iusto! Autem.
+    </div>
+    <div class="box3">
+        Box3 <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti unde ut quidem tenetur neque.
+    </div>
+</div>
+<div class="container1">
+    <div class="box4">
+        Box4 <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto explicabo repellat deleniti natus magni animi, possimus, debitis saepe nisi quis ipsam eveniet vel officiis.
+    </div>
+    <div class="box4">
+        Box5 <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur libero obcaecati tempora iusto! Autem.
+    </div>
+    <div class="box4">
+        Box6 <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti unde ut quidem tenetur neque.
+    </div>
+</div>
+</body>
+</html>
