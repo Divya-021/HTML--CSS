@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Factorial</title>
+        <script>
+            function Factorial()
+            {
+                var x=1;
+                var n=document.getElementsByName("text1")[0].value;
+                for(i=n;i>0;i--)
+                {
+                    x=x*i;
+                }
+                document.write("Factorial of number is"+x);
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label> Enter Number: </label>
+            <input type="text" name="text1">
+            <button onclick="Factorial()"> Calculate Factorial</button>
+        </form>
+    </body>
+</html>
