@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    color: aquamarine;
+}
+#p1{
+    background-color: bisque;
+    margin: 50px 20px 30px 40px;
+    padding: 30px;
+}
+.d1{
+    background-image: url("/images/pic_bulbon.gif");
+    background-repeat: no-repeat;
+}
